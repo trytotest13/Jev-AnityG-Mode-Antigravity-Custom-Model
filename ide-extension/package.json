@@ -1,0 +1,32 @@
+{
+  "name": "models",
+  "displayName": "Jev AnityG-Mode - Model Manager",
+  "description": "Add / manage custom models for the Jev AnityG-Mode proxy. Adds a status-bar button and command that open the model dashboard inside the IDE, and auto-starts the proxy when the IDE launches.",
+  "version": "0.1.0",
+  "publisher": "jev",
+  "license": "MIT",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "jevModels.openDashboard",
+        "title": "Jev AnityG-Mode: Add / Manage Custom Models (Dashboard)",
+        "category": "Jev AnityG-Mode"
+      },
+      {
+        "command": "jevModels.startProxy",
+        "title": "Jev AnityG-Mode: Start Proxy (if not running)",
+        "category": "Jev AnityG-Mode"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "jevModels.openDashboard",
+        "key": "ctrl+alt+m"
+      }
+    ]
+  }
+}
