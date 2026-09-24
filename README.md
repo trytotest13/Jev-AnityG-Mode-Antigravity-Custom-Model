@@ -243,5 +243,4 @@ Contributions are welcome. To get started:
 5. Submit a pull request.
 
 Please follow the existing code style (enforced by ESLint + Prettier).
-#   - J e v - A n i t y G - M o d e - A n t i g r a v i t y - C u s t o m - M o d e l  
- 
+#
